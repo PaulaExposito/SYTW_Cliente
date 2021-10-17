@@ -13,7 +13,11 @@
     "yo": "^4.3.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
-    "gulp-live-server": "0.0.31"
+    "gulp-clean-css": "^4.3.0",
+    "gulp-live-server": "0.0.31",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sourcemaps": "^1.6.0"
   }
 }

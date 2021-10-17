@@ -4,16 +4,17 @@
 ========================================== */
 
 /* set the default color, font-size, and line height */
+
 html {
-  color: #333;
-  font-size: 1em;
-  line-height: 1.4;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 /* make images and embedded media fluid */
-img,
-object {
-  max-width: 100%;
+
+img, object {
+    max-width: 100%;
 }
 
 /* =======================================
@@ -21,28 +22,68 @@ object {
     place your custom styles below here
 ========================================== */
 
+.links {
+    padding: 0 20% 0 20%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+}
 
+.col {
+    background-color: lightgray;
+    width: fit-content;
+}
 
+footer {
+    padding: 0 20% 0 20%;
+    /*   background-color: black; */
+}
 
+.links {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+}
 
+.col {
+    background-color: lightgray;
+    width: fit-content;
+}
 
+ul, li {
+    list-style: none;
+}
 
+ul {
+    background-color: red;
+    padding: 0;
+}
 
+.bar {
+    background-color: #d498c9;
+    height: 100px;
+}
 
+.garanties {
+    background-color: #95c2cf;
+    height: 80px;
+}
 
+.container {
+    width: 65%;
+    background-color: #4a2d5e;
+    height: 300px;
+}
 
+.form {
+    width: 35%;
+    height: 300px;
+    background-color: #9aa162;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.content {
+    display: flex;
+}
 
 /* =======================================
     helper classes
@@ -50,55 +91,54 @@ object {
     https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
 ========================================== */
 
- /*
+/*
   * Hide visually and from screen readers:
   */
 
- .hidden {
-     display: none !important;
- }
+.hidden {
+    display: none !important;
+}
 
- /*
+/*
   * Hide only visually, but have it available for screen readers:
   * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
   */
 
- .visuallyhidden {
-     border: 0;
-     clip: rect(0 0 0 0);
-     height: 1px;
-     margin: -1px;
-     overflow: hidden;
-     padding: 0;
-     position: absolute;
-     width: 1px;
- }
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
 
- /*
+/*
   * Extends the .visuallyhidden class to allow the element
   * to be focusable when navigated to via the keyboard:
   * https://www.drupal.org/node/897638
   */
 
- .visuallyhidden.focusable:active,
- .visuallyhidden.focusable:focus {
-     clip: auto;
-     height: auto;
-     margin: 0;
-     overflow: visible;
-     position: static;
-     width: auto;
- }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
 
- /*
+/*
   * Hide visually and from screen readers, but maintain layout
   */
 
- .invisible {
-     visibility: hidden;
- }
+.invisible {
+    visibility: hidden;
+}
 
- /*
+/*
   * Clearfix: contain floats
   *
   * For modern browsers
@@ -110,12 +150,13 @@ object {
   *    `:before` to contain the top-margins of child elements.
   */
 
- .clearfix:before,
- .clearfix:after {
-     content: " "; /* 1 */
-     display: table; /* 2 */
- }
+.clearfix:before, .clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
 
- .clearfix:after {
-     clear: both;
- }
+.clearfix:after {
+    clear: both;
+}

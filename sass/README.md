@@ -36,15 +36,42 @@ Esto crea la estructura de directorios:
 
   * Actualizaciones en tiempo real en el navegador
 
+  ```javascript
+  gulp.task('browser-sync', () => {
+    browserSync.init({
+      server: {
+        baseDir: "./"
+      }
+    })
+    gulp.watch("*.html").on("change", browserSync.reload);
+  });
+
+  ```
 
   * Minificar el CSS
+
+  ```javascript
+  gulp.task('styles', () => {
+    src(['src/styles/**/*.css'])
+      .pipe(cleanCSS())
+      .pipe(gulp.dest('dist'));
+  });
+  ```
 
 
   * Sourcesmaps
 
-
-
+  ```javascript
+  gulp.task('styles', () => {
+    gulp.src(['src/styles/**/*.css'])
+      .pipe(sourcemaps.init())
+      .pipe(cleanCSS())
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest('dist'));
+  });
+  ```
 
 
 ### Landing Page
+
 
