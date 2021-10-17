@@ -13,6 +13,7 @@
     "yo": "^4.3.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-live-server": "0.0.31"
   }
 }
