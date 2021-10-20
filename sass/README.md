@@ -74,11 +74,85 @@ Esto crea la estructura de directorios:
 
 ### Landing Page
 
-* sass en los hover del formulario
-* sass en los focus del formulario
+La página a imitar se encuentra desplegada en GitHub Pages en la siguiente dirección:
+
+* [https://paulaexposito.github.io/SYTW_Cliente//sass/landing-page/index.html](https://paulaexposito.github.io/SYTW_Cliente/sass/landing-page/index.html)
+
+Las partes de la página son:
+
+* Cabecera
+* Beneficios
+* Productos
+* Opiniones
+* Formularios
+* Garantías
+* Contacto
+
+Para la utilización de SASS destacan:
+
+* Diferentes ficheros *.scss
+
+```css
+@import "_base.scss";
+@import '_variables.scss';
+@import "_mixins.scss";
+```
+
+* Definición de variables [_variables_.scss](src/styles/_variables_.scss)
+
+```css
+$productTypes: serie, film, documental;
+$darkBackground: #181616;
+```
+
+* Varios mixins [_mixins.scss](src/styles/_mixins.scss)
+
+```css
+@mixin centerContent {
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+```
+
+* Mixins con parámetros
+```css
+@mixin cardItem($w, $h, $m) {
+    width: $w;
+    height: $h;
+    margin: $m;
+    background-color: #8f3333;
+    border-radius: 10%;
+}
+```
+
+* Anidación de instrucciones
+
+```css
+.benefits {
+    h1 {
+        @include headersH1;
+    }
+    text-align: justify;
+    margin-inline: 30px;
+}
+```
+
+* Bucle
+
+```css
+@each $product in $productTypes {
+		.#{$product}-product {
+				background: url("../../assets/#{$product}.jpg");
+				background-size: 100%;
+				background-size: cover;
+
+				&:hover {
+						border: 2px solid yellow;
+				}
+		}
+} 
+```
 
 
-* mismo estilo garantías y contacto -> diferente fondo
-
-seguro que quiere un mixin o algo así que reciba el color como parámetro
-
+* Además, se han cambiado algunas de las tareas de Gulp para que se detecten automáticamente los cambios en los ficheros SASS y se transpilen automáticamente a CSS.
