@@ -142,15 +142,15 @@ $darkBackground: #181616;
 
 ```css
 @each $product in $productTypes {
-		.#{$product}-product {
-				background: url("../../assets/#{$product}.jpg");
-				background-size: 100%;
-				background-size: cover;
+    .#{$product}-product {
+        background: url("../../assets/#{$product}.jpg");
+            background-size: 100%;
+            background-size: cover;
 
-				&:hover {
-						border: 2px solid yellow;
-				}
-		}
+            &:hover {
+                border: 2px solid yellow;
+            }
+    }
 } 
 ```
 
