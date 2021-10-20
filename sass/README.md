@@ -74,4 +74,11 @@ Esto crea la estructura de directorios:
 
 ### Landing Page
 
+* sass en los hover del formulario
+* sass en los focus del formulario
+
+
+* mismo estilo garantías y contacto -> diferente fondo
+
+seguro que quiere un mixin o algo así que reciba el color como parámetro
 
