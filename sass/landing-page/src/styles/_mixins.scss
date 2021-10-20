@@ -1,17 +1,74 @@
-@mixin headersH1 {
+@import '_variables.scss';
 
+@mixin headersH1 {
+    color: $black;
+    font-style: oblique;
+    color: red;
 }
 
 @mixin centerContent {
-
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
 
 /* Mixim para productos y clientes */
-@mixin cardItem {
-
+@mixin cardItem($w, $h, $m) {
+    width: $w;
+    height: $h;
+    margin: $m;
+    background-color: #8f3333;
+    border-radius: 10%;
 }
 
 @mixin socialImages {
     
 }
 
+@mixin flex {
+    display: flex;
+    @include centerContent;
+}
+
+@mixin layoutPadding {
+    padding: 0 7% 0 7%;
+}
+
+@mixin box($color: $bodyBackground) {
+    @include layoutPadding;
+
+    & h1 {
+        @include headersH1;
+    }
+
+    & .col {
+        width: fit-content;
+    }
+    
+    & .links {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    & div p {
+        font-size: 20px;
+    }
+    
+    & ul, li {
+        list-style: none;
+        
+        & a {
+            color: $lightBlue;
+        }
+    }
+    
+    & ul {
+        padding: 0;
+    }
+
+    background-color: $color;
+    padding-bottom: 30px;
+    padding-top: 1px;
+}
