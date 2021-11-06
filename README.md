@@ -3,4 +3,5 @@
 ## Prácticas
 
 1. [Sass](sass)
-1. [Web Components](web-components)
+2. [Web Components](web-components)
+3. [Gatsby](gatsby)
