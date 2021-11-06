@@ -56,11 +56,6 @@ Para ejecutar esta aplicación se tiene que ejecutar:
 npm run develop
 ```
 
-o:
-
-```
-napm run gatsby
-```
 
 
 
