@@ -5,23 +5,21 @@
     <meta charset="UTF-8" />
     <title>Web Components</title>
     <link rel="stylesheet" href="css/index.css">
-    <script defer src="js/index.js"></script>
+    <script defer type="module" src="js/index.js"></script>
 </head>
 
 <body>
     <h1>Web Components </h1>
 
     <div class="lifecycle">
-        <button onclick="addWC()">Añadir WC</button>
-        <button onclick="removeWC()">Quitar WC</button>
-        <button onclick="setName()">Cambiar atributo WC</button>
+        <button class="addWC">Añadir WC</button>
+        <button class="removeWC">Quitar WC</button>
+        <button class="setName">Cambiar atributo WC</button>        
         
         <div class="container"></div>
     </div>
 
-    <div class="courses">
-        Holi
-    </div>
+    <div class="courses"></div>
 
 </body>
 
