@@ -1,0 +1,14 @@
+{
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "2015"
+    },
+    "plugins": [
+        "jsx-a11y"
+    ],
+    "rules": {
+    },
+    "extends": [
+        "plugin:jsx-a11y/recommended"
+    ]
+  }
