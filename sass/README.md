@@ -76,7 +76,7 @@ Esto crea la estructura de directorios:
 
 La página a imitar se encuentra desplegada en GitHub Pages en la siguiente dirección:
 
-* [https://paulaexposito.github.io/SYTW_Cliente//sass/landing-page/index.html](https://paulaexposito.github.io/SYTW_Cliente/sass/landing-page/index.html)
+* [https://paulaexposito.github.io/SYTW_Cliente/sass/landing-page/index.html](https://paulaexposito.github.io/SYTW_Cliente/sass/landing-page/index.html)
 
 Las partes de la página son:
 
