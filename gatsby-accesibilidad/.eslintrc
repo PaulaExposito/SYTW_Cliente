@@ -12,8 +12,9 @@
         "gatsby",
         "jsx-a11y"
     ],
-    // "rules": {
+    "rules": {
     //     "no-anonymous-exports-page-templates": "warn",
     //     "limited-exports-page-templates": "warn"
-    // }
+        "jsx-a11y/no-noninteractive-tabindex": "warn"
+    }
 }

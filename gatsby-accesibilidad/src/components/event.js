@@ -1,37 +1,29 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticImage } from "gatsby-plugin-image"
 
 function Event({eventName, date, description, image}) {
-    let url = "https://cde.laprensa.e3.pe/ima/0/0/2/3/7/237172/691x430.jpg";
-    // url = image;
-    // console.log(image)
     return (
-        <div className="container w-full text-center">
+        <div className="container w-full text-center" tabIndex="0" aria-label="Evento">
             <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0 mb-8">
                 <img 
+                    tabIndex="0"
                     role="presentation"
                     className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
                     src={image} 
-                    alt="" 
+                    alt="Poster del evento" 
                     width="384" 
                     height="512"
                     style={{ objectFit: "cover" }}/>
-                {/* <StaticImage
-                    tabIndex="0"
-                    alt="Gatos navideños"
-                    src={image}
-                /> */}
                 <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                 <blockquote>
-                    <h1 className="space-y-4">{ eventName }</h1><br/>
+                    <h1 className="space-y-4" tabIndex="0">{ eventName }</h1><br/>
 
-                    { !description && <p className="text-lg font-semibold">{ Event.defaultProps.description } </p> }
-                    { description && <p className="text-lg font-semibold">{ description } </p> }
+                    { !description && <p className="text-lg font-semibold" tabIndex="0">{ Event.defaultProps.description } </p> }
+                    { description && <p className="text-lg font-semibold" tabIndex="0">{ description } </p> }
                 </blockquote>
                 <figcaption className="font-medium">
                     <div className="text-gray-500">
-                    { date }
+                        <p tabIndex="0" aria-label="Fecha del evento">{ date }</p>
                     </div>
                 </figcaption>
                 </div>
