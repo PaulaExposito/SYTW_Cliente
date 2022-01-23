@@ -1,0 +1,44 @@
+
+$colorPurple: #531946;
+$colorDarkPurple: #30162B;
+$colorWhite: #fff;
+$colorBlue: #095169;
+
+
+header {
+    background-color: $colorPurple;
+}
+
+.header {
+    & a {
+        color: $colorWhite;
+        & :hover {
+            color: $colorBlue;
+        }
+    }
+}
+
+.footer {
+    background-color: $colorDarkPurple;
+    color: $colorWhite;
+    & a {
+        color: $colorBlue;
+        &:hover {
+            color: $colorWhite;
+        }
+    }
+}
+
+.feature a {
+    background-color: $colorDarkPurple;
+    color: $colorWhite;
+    
+    & :hover {
+       color: $colorPurple; 
+    }
+}
+
+.content {
+    background-color: $colorWhite;
+    color: #222;
+}

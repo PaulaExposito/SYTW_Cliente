@@ -1,0 +1,20 @@
+@mixin perimeter {
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+header {
+    @include perimeter;
+}
+
+.footer {
+    @include perimeter;
+}
+
+.feature a {
+    @include perimeter;
+}
+
+.content {
+    @include perimeter;
+}
