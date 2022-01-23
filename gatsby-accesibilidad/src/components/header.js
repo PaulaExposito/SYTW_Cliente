@@ -8,9 +8,12 @@ function Header({ siteTitle }) {
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 mb-6 bg-gradient-to-r from-green-700 to-red-500">
       <div className="flex items-center flex-shrink-0 mr-6 text-white">
-        <span className="text-2xl font-semibold tracking-tight">
+        <Link
+          to={`/`}
+          className="text-2xl font-semibold tracking-tight text-white"
+        >
           Accesibilidad Gatsby
-        </span>
+        </Link>
       </div>
       <div className="block lg:hidden">
         <button

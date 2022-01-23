@@ -1,33 +1,43 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { StaticImage } from "gatsby-plugin-image"
 
 function Event({eventName, date, description, image}) {
-  return (
-      <div class="container w-full text-center">
-        <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0 mb-8">
-            <img 
-                class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
-                src={image} 
-                alt="" 
-                width="384" 
-                height="512"
-                style={{ objectFit: "cover" }}/>
-            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-            <blockquote>
-                <h1 class="space-y-4">{ eventName }</h1><br/>
+    let url = "https://cde.laprensa.e3.pe/ima/0/0/2/3/7/237172/691x430.jpg";
+    // url = image;
+    // console.log(image)
+    return (
+        <div className="container w-full text-center">
+            <figure className="md:flex bg-gray-100 rounded-xl p-8 md:p-0 mb-8">
+                <img 
+                    role="presentation"
+                    className="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" 
+                    src={image} 
+                    alt="" 
+                    width="384" 
+                    height="512"
+                    style={{ objectFit: "cover" }}/>
+                {/* <StaticImage
+                    tabIndex="0"
+                    alt="Gatos navideños"
+                    src={image}
+                /> */}
+                <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+                <blockquote>
+                    <h1 className="space-y-4">{ eventName }</h1><br/>
 
-                { !description && <p class="text-lg font-semibold">{ Event.defaultProps.description } </p> }
-                { description && <p class="text-lg font-semibold">{ description } </p> }
-            </blockquote>
-            <figcaption class="font-medium">
-                <div class="text-gray-500">
-                { date }
+                    { !description && <p className="text-lg font-semibold">{ Event.defaultProps.description } </p> }
+                    { description && <p className="text-lg font-semibold">{ description } </p> }
+                </blockquote>
+                <figcaption className="font-medium">
+                    <div className="text-gray-500">
+                    { date }
+                    </div>
+                </figcaption>
                 </div>
-            </figcaption>
-            </div>
-        </figure>
-    </div>
-  )
+            </figure>
+        </div>
+    )
 }
 
 Event.defaultProps = {
