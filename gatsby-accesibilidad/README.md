@@ -12,7 +12,7 @@ npm install
 npm run develop
 ```
 
-También puede accederse a la versión desplegada en GitHub Pages [aquí]().
+También puede accederse a la versión desplegada en GitHub Pages [aquí](https://paulaexposito.github.io/SYTW_Cliente/gatsby-accesibilidad/).
 
 
 ## Realización de la práctica

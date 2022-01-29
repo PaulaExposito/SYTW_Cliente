@@ -12,6 +12,5 @@
 
 ### Segunda parte
 
-[Añadir submodulo]
-1. [ThreeJS: Simón Dice](url)
+1. [ThreeJS: Simón Dice](https://github.com/PaulaExposito/simon-says) - [Deploy](https://paulaexposito.github.io/simon-says/)
 2. [Web Semántica](url)

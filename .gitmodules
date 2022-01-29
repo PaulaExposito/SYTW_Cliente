@@ -1,0 +1,3 @@
+[submodule "simon-says"]
+	path = simon-says
+	url = https://github.com/PaulaExposito/simon-says
